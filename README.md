@@ -1,0 +1,1 @@
+This is an old project of mine: its ugly but its a quick and dirty solution to a problem with my mac monitor. I just updated it to run on MacOSX Lion. You can find the original project page on [GoogleCode](http://code.google.com/p/magicmonitor/)
