@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MagicMonitor' target in the 'MagicMonitor' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
