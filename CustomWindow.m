@@ -4,7 +4,7 @@
 @implementation CustomWindow
 
 //In Interface Builder we set CustomWindow to be the class for our window, so our own initializer is called here.
-- (id)initWithContentRect:(NSRect)contentRect styleMask:(unsigned int)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag {
+- (id)initWithContentRect:(NSRect)contentRect styleMask:(NSUInteger)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag {
 
 	NSRect screenRect = [[NSScreen mainScreen] frame];
     //Call NSWindow's version of this function, but pass in the all-important value of NSBorderlessWindowMask

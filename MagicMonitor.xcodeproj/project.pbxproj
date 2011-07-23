@@ -14,7 +14,6 @@
 		7B8854AB0E1E4AD900477A0B /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7B8854AA0E1E4AD900477A0B /* icon.icns */; };
 		7BD5BC470E3606DD00EC006F /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD5BC460E3606DD00EC006F /* ApplicationServices.framework */; };
 		7BD7B5B80E4AD59C00C03934 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD7B5B70E4AD59C00C03934 /* QuartzCore.framework */; };
-		7BD7B5C30E4AD72100C03934 /* NSWindowFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD7B5C20E4AD72100C03934 /* NSWindowFade.m */; };
 		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
@@ -53,8 +52,6 @@
 		7B8854AA0E1E4AD900477A0B /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		7BD5BC460E3606DD00EC006F /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		7BD7B5B70E4AD59C00C03934 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		7BD7B5C10E4AD72100C03934 /* NSWindowFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSWindowFade.h; sourceTree = "<group>"; };
-		7BD7B5C20E4AD72100C03934 /* NSWindowFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSWindowFade.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* MagicMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,8 +81,6 @@
 				7B8854820E1E48CF00477A0B /* CustomView.m */,
 				7B8854830E1E48CF00477A0B /* CustomWindow.h */,
 				7B8854840E1E48CF00477A0B /* CustomWindow.m */,
-				7BD7B5C10E4AD72100C03934 /* NSWindowFade.h */,
-				7BD7B5C20E4AD72100C03934 /* NSWindowFade.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -228,7 +223,6 @@
 				7B8854860E1E48CF00477A0B /* CustomView.m in Sources */,
 				7B8854870E1E48CF00477A0B /* CustomWindow.m in Sources */,
 				7B2A6D1B0E1E594600EB99D8 /* GradientView.m in Sources */,
-				7BD7B5C30E4AD72100C03934 /* NSWindowFade.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +252,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
@@ -274,6 +269,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

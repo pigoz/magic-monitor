@@ -3,9 +3,10 @@
 @interface CustomView : NSView
 {
     float brightness;
-	NSGradient *gradient;
+	NSGradient* gradient;
 	CGFloat angle;
 	BOOL gradientEnabled;
+    NSStatusBar* statusItem;    
 }
 @property(retain) NSGradient* gradient;
 @property(assign) CGFloat angle;
